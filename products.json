@@ -1,0 +1,106 @@
+{"products":[{
+    "name": "Relaxed Fit Coat",
+    "description": "A description of the Relaxed Fit Coat.",
+    "price": 229.00,
+    "skus": [
+      {"size": "S", "quantity": 30},
+      {"size": "M", "quantity": 80},
+      {"size": "L", "quantity": 60},
+      {"size": "XL", "quantity": 40}
+    ],
+    "category": "coat",
+    "picture": "products/relaxed_fit_coat.png"
+  },
+  {
+    "name": "Oversized Velvet Blazer",
+    "description": "A description of the Oversized Velvet Blazer.",
+    "price": 159.00,
+    "skus": [
+      {"size": "S", "quantity": 25},
+      {"size": "M", "quantity": 100},
+      {"size": "L", "quantity": 50},
+      {"size": "XL", "quantity": 30}
+    ],
+    "category": "blazer",
+    "picture": "products/oversized_velvet_blazer.png"
+  },
+  {
+    "name": "Shiny Shirt",
+    "description": "A description of the Shiny Shirt.",
+    "price": 69.90,
+    "skus": [
+      {"size": "S", "quantity": 40},
+      {"size": "M", "quantity": 110},
+      {"size": "L", "quantity": 90},
+      {"size": "XL", "quantity": 20}
+    ],
+    "category": "shirt",
+    "picture": "products/shiny_shirt.png"
+  },
+  {
+    "name": "Velvet Pleated Pants",
+    "description": "A description of the Velvet Pleated Pants.",
+    "price": 69.90,
+    "skus": [
+      {"size": "S", "quantity": 15},
+      {"size": "M", "quantity": 85},
+      {"size": "L", "quantity": 95},
+      {"size": "XL", "quantity": 45}
+    ],
+    "category": "pants",
+    "picture": "products/velvet_pleated_pants.png"
+  },
+  {
+    "name": "Faux Fur Hooded Jacket",
+    "description": "A description of the Faux Fur Hooded Jacket.",
+    "price": 129.00,
+    "skus": [
+      {"size": "S", "quantity": 35},
+      {"size": "M", "quantity": 65},
+      {"size": "L", "quantity": 75},
+      {"size": "XL", "quantity": 25}
+    ],
+    "category": "jacket",
+    "picture": "products/faux_fur_hooded_jacket.png"
+  },
+  {
+    "name": "Double Waist Jeans",
+    "description": "A description of the Double Waist Jeans.",
+    "price": 89.90,
+    "skus": [
+      {"size": "S", "quantity": 20},
+      {"size": "M", "quantity": 70},
+      {"size": "L", "quantity": 80},
+      {"size": "XL", "quantity": 30}
+    ],
+    "category": "jeans",
+    "picture": "products/double_waist_jeans.png"
+  },
+  {
+    "name": "Rhinestone Denim Jacket",
+    "description": "A description of the Rhinestone Denim Jacket.",
+    "price": 169.00,
+    "skus": [
+      {"size": "S", "quantity": 18},
+      {"size": "M", "quantity": 82},
+      {"size": "L", "quantity": 76},
+      {"size": "XL", "quantity": 24}
+    ],
+    "category": "jacket",
+    "picture": "products/rhinestone_denim_jacket.png"
+  },
+  {
+    "name": "Side Ripped Effect Jeans",
+    "description": "A description of the Side Ripped Effect Jeans.",
+    "price": 89.90,
+    "skus": [
+      {"size": "S", "quantity": 22},
+      {"size": "M", "quantity": 78},
+      {"size": "L", "quantity": 88},
+      {"size": "XL", "quantity": 32}
+    ],
+    "category": "jeans",
+    "picture": "products/side_ripped_effect_jeans.png"
+  }
+]
+}

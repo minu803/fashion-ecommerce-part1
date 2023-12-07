@@ -1,0 +1,59 @@
+{"payments":[
+    {
+      "userId": "james.wilson@example.com",
+      "type": "credit",
+      "card": {
+        "type": "visa",
+        "lastFour": "1212",
+        "expiryMonth": 12,
+        "expiryYear": 2023,
+        "cvvVerified": true
+      }
+    },
+    {
+      "userId": "james.wilson@example.com",
+      "type": "debit",
+      "card": {
+        "type": "visa",
+        "lastFour": "1212",
+        "expiryMonth": 12,
+        "expiryYear": 2022,
+        "cvvVerified": true
+      }
+    },
+    {
+      "userId": "emily.jones@example.com",
+      "type": "stripe",
+      "status": "awaitingVerification",
+      "token": "emilyjones_stripe_token"
+    },
+    {
+      "userId": "david.smith@example.com",
+      "type": "credit",
+      "card": {
+        "type": "mastercard",
+        "lastFour": "3434",
+        "expiryMonth": 11,
+        "expiryYear": 2024,
+        "cvvVerified": false
+      }
+    },
+    {
+      "userId": "sophia.brown@example.com",
+      "type": "paypal",
+      "email": "sophiabrown_paypal@example.com",
+      "status": "verified"
+    },
+    {
+      "userId": "william.johnson@example.com",
+      "type": "debit",
+      "card": {
+        "type": "visa",
+        "lastFour": "5566",
+        "expiryMonth": 10,
+        "expiryYear": 2025,
+        "cvvVerified": true
+      }
+    }
+  ]
+} 

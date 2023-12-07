@@ -1,0 +1,114 @@
+{"orders":[
+    {
+      "userId": "david.smith@example.com",
+      "paymentStatus": "processed",
+      "status": "delivered",
+      "amount": 158.80,
+      "items": [
+        {
+          "name": "Shiny Shirt",
+          "size": "L",
+          "quantity": 2,
+          "price": 69.90,
+          "discounts": 0.00,
+          "preTax": 139.80,
+          "afterTax": 152.78
+        }
+      ],
+      "shippingAddress": {
+        "country": "United States",
+        "street 1": "789 Maple Lane",
+        "street 2": "Suite 300",
+        "city": "Denver",
+        "state": "Colorado",
+        "zip": "80201"
+      },
+      "billingAddress": {
+        "country": "United States",
+        "street 1": "101 Different St",
+        "street 2": "Suite 500",
+        "city": "Denver",
+        "state": "Colorado",
+        "zip": "80202"
+      },
+      "trackingNumber": "US123456789C"
+    },
+    {
+      "userId": "sophia.brown@example.com",
+      "paymentStatus": "authorized",
+      "status": "pending",
+      "amount": 218.90,
+      "items": [
+        {
+          "name": "Velvet Pleated Pants",
+          "size": "M",
+          "quantity": 1,
+          "price": 69.90,
+          "discounts": 5.00,
+          "preTax": 64.90,
+          "afterTax": 70.74
+        },
+        {
+          "name": "Faux Fur Hooded Jacket",
+          "size": "S",
+          "quantity": 1,
+          "price": 129.00,
+          "discounts": 0.00,
+          "preTax": 129.00,
+          "afterTax": 140.78
+        }
+      ],
+      "shippingAddress": {
+        "country": "United States",
+        "street 1": "321 Cedar Blvd",
+        "street 2": "Apt 12",
+        "city": "Seattle",
+        "state": "Washington",
+        "zip": "98101"
+      },
+      "billingAddress": {
+        "country": "United States",
+        "street 1": "321 Cedar Blvd",
+        "street 2": "Apt 12",
+        "city": "Seattle",
+        "state": "Washington",
+        "zip": "98101"
+      },
+      "trackingNumber": "US123456789D"
+    },
+    {
+      "userId": "william.johnson@example.com",
+      "paymentStatus": "declined",
+      "status": "cancelled",
+      "amount": 179.80,
+      "items": [
+        {
+          "name": "Rhinestone Denim Jacket",
+          "size": "XL",
+          "quantity": 1,
+          "price": 169.00,
+          "discounts": 0.00,
+          "preTax": 169.00,
+          "afterTax": 184.11
+        }
+      ],
+      "shippingAddress": {
+        "country": "United States",
+        "street 1": "654 Elm Street",
+        "street 2": "",
+        "city": "Orlando",
+        "state": "Florida",
+        "zip": "32801"
+      },
+      "billingAddress": {
+        "country": "United States",
+        "street 1": "987 Palm Road",
+        "street 2": "",
+        "city": "Orlando",
+        "state": "Florida",
+        "zip": "32808"
+      },
+      "trackingNumber": "US123456789E"
+    }
+  ]
+} 

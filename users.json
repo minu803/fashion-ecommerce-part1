@@ -1,0 +1,131 @@
+{"users":[{
+    "email": "james.wilson@example.com",
+    "firstName": "James",
+    "lastName": "Wilson",
+    "hashedPassword": "somehashedpassword1",
+    "billingAddress": {
+      "country": "United States",
+      "street 1": "123 Oak Street",
+      "street 2": "Unit 4",
+      "city": "Austin",
+      "state": "Texas",
+      "zip": "73301"
+    },
+    "shippingAddress": {
+      "country": "United States",
+      "street 1": "123 Oak Street",
+      "street 2": "Unit 4",
+      "city": "Austin",
+      "state": "Texas",
+      "zip": "73301"
+    }
+  },
+  {
+    "email": "emily.jones@example.com",
+    "firstName": "Emily",
+    "lastName": "Jones",
+    "hashedPassword": "somehashedpassword2",
+    "billingAddress": {
+      "country": "United States",
+      "street 1": "456 Pine Road",
+      "street 2": "Apt B2",
+      "city": "Raleigh",
+      "state": "North Carolina",
+      "zip": "27601"
+    },
+    "shippingAddress": {
+      "country": "United States",
+      "street 1": "456 Pine Road",
+      "street 2": "Apt B2",
+      "city": "Raleigh",
+      "state": "North Carolina",
+      "zip": "27601"
+    }
+  },
+  {
+    "email": "david.smith@example.com",
+    "firstName": "David",
+    "lastName": "Smith",
+    "hashedPassword": "somehashedpassword3",
+    "billingAddress": {
+      "country": "United States",
+      "street 1": "789 Maple Lane",
+      "street 2": "Suite 300",
+      "city": "Denver",
+      "state": "Colorado",
+      "zip": "80201"
+    },
+    "shippingAddress": {
+      "country": "United States",
+      "street 1": "789 Maple Lane",
+      "street 2": "Suite 300",
+      "city": "Denver",
+      "state": "Colorado",
+      "zip": "80201"
+    }
+  },
+  {
+    "email": "sophia.brown@example.com",
+    "firstName": "Sophia",
+    "lastName": "Brown",
+    "hashedPassword": "somehashedpassword4",
+    "billingAddress": {
+      "country": "United States",
+      "street 1": "321 Cedar Blvd",
+      "street 2": "Apt 12",
+      "city": "Seattle",
+      "state": "Washington",
+      "zip": "98101"
+    },
+    "shippingAddress": {
+      "country": "United States",
+      "street 1": "321 Cedar Blvd",
+      "street 2": "Apt 12",
+      "city": "Seattle",
+      "state": "Washington",
+      "zip": "98101"
+    }
+  },
+  {
+    "email": "william.johnson@example.com",
+    "firstName": "William",
+    "lastName": "Johnson",
+    "hashedPassword": "somehashedpassword5",
+    "billingAddress": {
+      "country": "United States",
+      "street 1": "654 Elm Street",
+      "street 2": "",
+      "city": "Orlando",
+      "state": "Florida",
+      "zip": "32801"
+    },
+    "shippingAddress": {
+      "country": "United States",
+      "street 1": "654 Elm Street",
+      "street 2": "",
+      "city": "Orlando",
+      "state": "Florida",
+      "zip": "32801"
+    }
+  },
+  {
+    "email": "random.user@example.com",
+    "firstName": "Random",
+    "lastName": "User",
+    "hashedPassword": "randomhashedpassword123",
+    "billingAddress": {
+      "country": "United States",
+      "street 2": "Apt 7",
+      "city": "Seattle",
+      "state": "Washington",
+    },
+    "shippingAddress": {
+      "country": "United States",
+      "street 1": "123 Pine Street",
+      "street 2": "Suite 10",
+      "city": "Seattle",
+      "state": "Washington",
+      "zip": "98101"
+    }
+  }
+]}
