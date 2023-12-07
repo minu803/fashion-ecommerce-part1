@@ -1,8 +1,3 @@
----
-output:
-  word_document: default
-  html_document: default
----
 # fashion-ecoommerce-part1
 
 ## I. Purpose
@@ -23,7 +18,7 @@ The schema is designed to ensure effective management of product lines and user 
 - **hashedPassword**: Securely stored for privacy and safety.
 - **billingAddress** and **shippingAddress**: Includes country, streets, city, state, and zip for accurate billing and delivery.
 
-##### Key Points:
+#### Key Points:
 - **Security**: Utilizes hashed passwords for data protection.
 - **User Identification**: Email prevents duplicate accounts.
 - **User Experience**: Names and addresses provide personalization.
@@ -36,7 +31,7 @@ The schema is designed to ensure effective management of product lines and user 
 - **category**: Type of product for organization.
 - **picture**: Visual reference for the product.
 
-##### Key Points:
+#### Key Points:
 - **Detailed Descriptions & Images**: Aids user decision-making.
 - **Effective Inventory Tracking**: SKU details for stock management.
 - **Organized Display**: Categorization for user-friendly navigation.
@@ -50,7 +45,7 @@ The schema is designed to ensure effective management of product lines and user 
 - **shippingAddress** & **billingAddress**: Details for accurate order processing.
 - **trackingNumber**: For delivery tracking.
 
-##### Key Points:
+#### Key Points:
 - **Security and Privacy**: Excludes direct payment details for security.
 - **Data Consistency**: Employs static data for accuracy.
 - **User-Centric Design**: Includes comprehensive details for customer experience.
@@ -64,21 +59,42 @@ The schema is designed to ensure effective management of product lines and user 
   - **expiry**: Expiration date.
   - **cvvVerified**: CVV confirmation status.
 
-##### Key Points:
+#### Key Points:
 - **Security**: Minimal card details for safety.
 - **Variety**: Various payment types for convenience.
 - **Compliance**: Verified and secure payment methods.
 
 
 ### Step 2. Data Transformation and Import
-I read all the CSV files and created a consolidated table by performing a join using the primary key 'id'. Next, I extracted the essential columns as defined in the schema design, and these were used to create separate dataframes. Subsequently, I transformed all the entries within the dataframes into JSON format to prepare them for import into the MongoDB environment. These JSON files were also saved for reference. Finally, the data was imported into the Pymongo environment using the following procedure:
+Using the outlined schema design, I generated mock data in .json format with assistance from ChatGPT. This data was then preserved as reference files. To integrate this data into the MongoDB environment, I employed a specific import process using Pymongo. An example that illustrates the import process specifically for the **'products.json'** file is detailed below:
+
+```python
+# connect to MongoDB
+client = pymongo.MongoClient("mongodb://localhost:27017/")
+db = client["ecommerce"]
 
 
+# define collections
+products = db["products"] 
+users = db["users"]
+payments = db["payments"]
+orders = db["orders"]
 
+
+# loop through products.json rows and insert into MongoDB
+with open('products.json', 'r') as file:
+    data = json.load(file)
+    for row in data['products']:
+        print(row)
+        products.insert_one(row)
+```
 
 ### Step 3. Flask App
 #### Homepage
 The project's homepage sets the stage for a user-friendly experience. When users access the default root URL path (/ or http://localhost:5000/), they're greeted with a welcome message. This welcoming message doesn't require complex HTML rendering; instead, it's delivered through a straightforward JSON response.
+<p align="center">
+  <img width="817" alt="welcome" src="https://github.com/minu803/fashion-ecommerce-part1/assets/111295624/becc1823-c577-4053-9c4c-1d815fa10ad8">
+</p>
 
 
 ## III. Use of GenAI
