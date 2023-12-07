@@ -156,21 +156,34 @@ The endpoint is designed to calculate the total sales amount(pre-tax and after-t
 ![total_sales](https://github.com/minu803/fashion-ecommerce-part1/assets/111295624/329eac5e-8c76-4538-94a0-06a37ec74972)
 
 #### Expired Credit Cards
+This function retrieves a list of expired credit cards, returning details of expired cards upon success, and providing an error message in case of server errors or exceptions. Comparing card expiry dates against the current date, it ensures the timely and accurate identification of expired cards, critical for managing sensitive financial information.
+
+![expired_card](https://github.com/minu803/fashion-ecommerce-part1/assets/111295624/5f60d9e3-9f3d-40f3-9c6e-d911d1666e01)
+
 
 #### Count Payment Types
+This function provides a count of each payment type (credit, debit, stripe, PayPal) in the database. It successfully returns the number of transactions for each payment method, and in cases of server exceptions, an error message is provided. This method is essential for analyzing the distribution of payment methods used in transactions.
+
+![count_payment](https://github.com/minu803/fashion-ecommerce-part1/assets/111295624/bc6d880a-1230-4cdb-943b-31ceec6b84d3)
 
 #### Users with Incomplete Addresses
+This endpoint targets users with incomplete billing or shipping address information in the database, specifically missing key fields such as street, city, state, or zip. Upon successful execution, it retrieves a list of these users, aiding in maintaining complete user profiles for accurate billing and shipping. In the event of a server error, an error message is provided for troubleshooting purposes.
+
+![incomplete_address](https://github.com/minu803/fashion-ecommerce-part1/assets/111295624/3e21b144-02bb-425f-aaa1-c83c6de52108)
 
 #### Users by Area
+This function aggregates and counts users based on their state and city listed in the billing address. It provides a clear overview of user distribution geographically, with successful responses yielding detailed aggregation data. In case of server errors, it returns an error message for further action. This functionality is essential for understanding user demographics and regional preferences.
+
+<img width="815" alt="users_by_area" src="https://github.com/minu803/fashion-ecommerce-part1/assets/111295624/67ebd999-ef15-4bb0-bf47-95044fb466ce">
 
 ## III. Use of GenAI
-1. **Convert ObjectId:**
+1. **Convert ObjectId:** Faced with JSON serialization errors, I turned to Gen AI for guidance on the proper format conversion. The solution was to transform the "_id" field from an ObjectId to a string, ensuring compatibility with JSON serialization and circumventing the complications of ObjectId's binary format in JSON
 
+2. **Hypothetical Data Creation:**  After defining the structures of my collections, I leveraged GenAI to generate hypothetical data. This assisted in populating my database with realistic entries, allowing for robust testing and simulation of real-world operations.
 
-2. **delete_by_job_title:**
+3. **Query Logic:** In instances where queries did not return the expected results, GenAI proved instrumental. For example, when identifying expired credit cards within the database, the logic needed to be precise. For example, GenAI's guidance helped refine the query to accurately filter out cards expiring before 2023, or those expiring in 2023 but before October. This meticulous approach ensured the accurate retrieval of all expired cards.
 
-
-3. **Comments:**
+4. **Comments:** GenAI was instrumental in providing detailed explanations for the purpose behind each function. It also aided in the systematic arrangement and classification of potential responses from my code, greatly improving the development process's transparency and structure.
 
 
 
